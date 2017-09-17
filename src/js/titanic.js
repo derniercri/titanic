@@ -68,7 +68,7 @@ var Titanic; // a global library container
   function initialize (options, callback) {
     var baseURL = options.baseURL
 
-    document.addEventListener('DOMContentLoaded', function () {
+    // document.addEventListener('DOMContentLoaded', function () { // do it synchronously when used in ReactJS
       var titanicElements = document.getElementsByClassName('titanic')
       var i = titanicElements.length
 
@@ -84,7 +84,7 @@ var Titanic; // a global library container
       if (typeof callback === 'function') {
         callback()
       }
-    })
+    // })
   }
 
   function findItem (token) {
